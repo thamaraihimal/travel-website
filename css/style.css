@@ -180,8 +180,6 @@ header.sticky{
 }
 .thum{
 	position: relative;
-	transition: all .3s cubic-bezier(.445,.05,.55,.95);
-	will-change: filter;
 	cursor: pointer;
 }
 .thum img{
@@ -217,10 +215,6 @@ header.sticky{
 	font-size: 15px;
 	color: var(--second-color);
 }
-.thum:hover{
-	filter: brightness(100%) hue-rotate(45deg);
-	transform: scale(1.04);
-}
 
 .destination-content{
 	display: grid;
@@ -237,9 +231,6 @@ header.sticky{
 	height: 500px;
 	object-fit: cover;
 	border-radius: 15px;
-	filter: brightness(80%);
-	transition: all .3s cubic-bezier(.495,.05,.55,.95);
-	will-change: filter;
 }
 .col-content h5{
 	position: absolute;
@@ -257,9 +248,7 @@ header.sticky{
 	bottom: 30px;
 	letter-spacing: 2px;
 }
-.col-content img:hover{
-	filter: brightness(100%) hue-rotate(45deg);
-	transform: scale(1.04);
+.col-content img:{
 	cursor: pointer;
 }
 
